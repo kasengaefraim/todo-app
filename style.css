@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: min(5em, 10%);
+  
 }
 
 .wrapper {
@@ -34,25 +34,30 @@ body {
   max-width: 100%;
   gap: 10px;
   display: flex;
-  flex-flow: column nowrap;
+  padding: min(5em, 10%);
+  flex-flow: column;
   align-items: center;
+  justify-content: center;
 }
 
 h1 {
   color: var(--tea-green);
+  font-size: clamp(1.5rem, calc(7vw + 1.5rem),2rem);
 }
 #todo-input {
   padding: 12px 20px;
   width: 100%;
-  background: none;
-  border: 2px solid var(--gold-color);
+  background: var(--nyanza);
+  border: none;
   border-radius: var(--border-radius);
   font: inherit;
-  color: var(--tea-green);
+  
   caret-color: var(--tea-green);
+  outline: none;
 }
 #todo-input:focus {
-  outline: none;
+  outline-color: var(--gold-color);
+  
 }
 form {
   width: 100%;
@@ -66,24 +71,26 @@ form {
   font: inherit;
   background: var(--gold-color);
   color: var(--nyanza);
-  border: 2px solid var(--gold-color);
+  border: none;
   border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  cursor: pointer; 
+  cursor: pointer;
 }
-#todo-list{
-    width: 100%;
+#todo-list {
+  width: 100%;
+  
+  margin-top: 30px;
 }
 .todo {
   background-color: var(--background-light);
   margin-bottom: var(--padding);
   padding: var(--padding);
   border-radius: var(--border-radius);
-  display: flex;
- 
+  display: grid;
+  grid-template-columns: auto 1fr auto;
 }
-.todo > .todo-text {
+.todo .todo-text {
   padding: 0 calc(var(--padding));
-  flex-grow: 1;
+ 
 }
 
 .delete-button {

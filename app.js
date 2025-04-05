@@ -38,7 +38,7 @@ function createTodoItem(todo, todoIndex) {
     const todoLi = document.createElement('li');
     todoLi.className = "todo";
     todoLi.innerHTML = `
-    <input type="checkbox" name="" id="${todoId}">
+    <input type="checkbox" name="checkbox-${todoIndex}" id="${todoId}">
             <label for="${todoId}" class="custom-checkbox">
                 <svg fill="transparent" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>
             </label>
