@@ -45,5 +45,24 @@ A simple and lightweight To-Do list application built with **HTML**, **CSS**, an
 
 ---
 
-## 📂 Project Structure
 
+---
+
+## 🧪 How to Use
+
+1. Clone the repository or download the ZIP:
+
+```bash
+git clone https://github.com/kasengaefraim/todo-app.git
+```
+
+2. Open index.html in your favorite browser.
+
+That's it! No build steps, no frameworks — just plain old web magic.
+
+✨ Future Improvements
+ Add due dates or categories
+
+ Enable editing tasks
+
+ Sync with cloud storage
