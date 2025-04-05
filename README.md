@@ -46,7 +46,6 @@ A simple and lightweight To-Do list application built with **HTML**, **CSS**, an
 ---
 
 
----
 
 ## 🧪 How to Use
 
